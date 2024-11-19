@@ -13,11 +13,11 @@ const CustomNavlink: React.FC<CustomNavLinkProps> = ({ to, children }) => {
 	const isActive = location.hash === to;
 
 	return (
-		<NavLink to={to} className={`relative text-base font-medium transition-all duration-300 ease-in-out hover:text-active ${isActive ? "text-active scale-105 font-bold" : "text-inherit"}`}>
+		<NavLink to={to} className={`relative text-base font-medium transition-all duration-700 ease-in-out hover:text-active ${isActive ? "text-active scale-110 font-bold" : "text-inherit"}`}>
 			<span>
-				{isActive && <p className='inline mr-2'>&lt;</p>}
+				{isActive && <p className='inline mr-1'>&lt;</p>}
 				{children}
-				{isActive && <p className='inline ml-2'>&gt;</p>}
+				{isActive && <p className='inline ml-1'>&gt;</p>}
 			</span>
 		</NavLink>
 	);
