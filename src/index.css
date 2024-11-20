@@ -11,6 +11,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --max-screen-width-md: @apply md:max-w-4xl;
+  --max-screen-width-xl: @apply xl:max-w-5xl;
+  --max-screen-width-2xl: @apply 2xl:max-w-7xl;
 }
 
 body {
@@ -22,4 +25,8 @@ body {
 
 .nav-link {
   @apply text-white no-underline;
+}
+
+.max-screen-width {
+  @apply md:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl;
 }
