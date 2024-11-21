@@ -51,10 +51,10 @@ const Navbar = () => {
 							<X onClick={handleClose} size={32} color="#ffffff" />
 						</div>
 						<div className='flex flex-col gap-12 text-center'>
-							<CustomNavlink customClass='text-xl' to="#services">Service</CustomNavlink>
-							<CustomNavlink customClass='text-xl' to="#works">Works</CustomNavlink>
-							<CustomNavlink customClass='text-xl' to="#testimonies">Testimonies</CustomNavlink>
-							<CustomNavlink customClass='text-xl' to="#contacts">Contacts</CustomNavlink>
+							<CustomNavlink onClick={handleClose} customClass='text-xl' to="#services">Service</CustomNavlink>
+							<CustomNavlink onClick={handleClose} customClass='text-xl' to="#works">Works</CustomNavlink>
+							<CustomNavlink onClick={handleClose} customClass='text-xl' to="#testimonies">Testimonies</CustomNavlink>
+							<CustomNavlink onClick={handleClose} customClass='text-xl' to="#contacts">Contacts</CustomNavlink>
 						</div>
 						<div className='flex justify-between items-center'>
 							<Button variant="ghost">Facebook</Button>

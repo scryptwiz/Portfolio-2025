@@ -8,7 +8,7 @@ interface MaxWidthProps {
 const MaxWidth: React.FC<MaxWidthProps> = ({ className = "", children }) => {
 	return (
 		<div className={`app ${className}`}>
-			<div className='max-screen-width mx-auto'>
+			<div className='max-screen-width mx-auto h-full'>
 				{children}
 			</div>
 		</div>
