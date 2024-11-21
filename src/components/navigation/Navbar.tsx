@@ -7,7 +7,7 @@ const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false)
 
 	return (
-		<nav className='w-full flex justify-between items-center py-10 px-5'>
+		<nav className='w-full flex justify-between items-center lg:py-10 py-7 px-5'>
 			<div className='flex justify-between items-center gap-16'>
 				<h1 className='text-white text-2xl'><span className='font-bold'>Kelvin</span> Ajayi</h1>
 				<div className='lg:flex hidden gap-6 tracking-widest items-center'>
@@ -33,7 +33,7 @@ const Navbar = () => {
 			</div>
 
 			{isOpen &&
-				<div className='fixed top-0 left-0 w-full h-screen lg:hidden bg-secondary py-10 px-5'>
+				<div className='fixed top-0 left-0 w-full h-screen lg:hidden bg-secondary lg:py-10 py-7 px-5'>
 					<div className='flex flex-col justify-between w-full h-full'>
 						<div className='flex justify-between items-center'>
 							<h1 className='text-white text-2xl'><span className='font-bold'>Kelvin</span> Ajayi</h1>
