@@ -28,5 +28,5 @@ body {
 }
 
 .max-screen-width {
-  @apply md:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl;
+  @apply md:max-w-4xl lg:max-w-5xl 2xl:max-w-7xl;
 }

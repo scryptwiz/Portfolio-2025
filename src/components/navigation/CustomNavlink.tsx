@@ -4,16 +4,17 @@ import { NavLink, NavLinkProps, useLocation } from 'react-router-dom'
 interface CustomNavLinkProps extends NavLinkProps {
 	to: string;
 	children: React.ReactNode;
+	customClass?: string;
 }
 
-const CustomNavlink: React.FC<CustomNavLinkProps> = ({ to, children }) => {
+const CustomNavlink: React.FC<CustomNavLinkProps> = ({ to, children, customClass }) => {
 	const location = useLocation();
 
 	// Check if the current hash matches the `to` value
 	const isActive = location.hash === to;
 
 	return (
-		<NavLink to={to} className={`relative text-base font-medium transition-all duration-700 ease-in-out hover:text-active ${isActive ? "text-active scale-110 font-bold" : "text-inherit"}`}>
+		<NavLink to={to} className={`relative font-medium transition-all duration-700 ease-in-out hover:text-active ${isActive ? "text-active scale-110 font-bold" : "text-inherit"} ${customClass}`}>
 			<span>
 				{isActive && <p className='inline mr-1'>&lt;</p>}
 				{children}

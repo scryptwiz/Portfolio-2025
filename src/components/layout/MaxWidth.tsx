@@ -1,13 +1,13 @@
 import React, { ReactNode } from "react";
 
 interface MaxWidthProps {
-	bgColor?: string;
+	className?: string;
 	children: ReactNode;
 }
 
-const MaxWidth: React.FC<MaxWidthProps> = ({ bgColor = "", children }) => {
+const MaxWidth: React.FC<MaxWidthProps> = ({ className = "", children }) => {
 	return (
-		<div className={`app ${bgColor}`}>
+		<div className={`app ${className}`}>
 			<div className='max-screen-width mx-auto'>
 				{children}
 			</div>
@@ -15,4 +15,4 @@ const MaxWidth: React.FC<MaxWidthProps> = ({ bgColor = "", children }) => {
 	)
 }
 
-export default MaxWidth
+export default MaxWidth;
