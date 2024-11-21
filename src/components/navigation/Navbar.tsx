@@ -5,6 +5,17 @@ import { useState } from 'react'
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false)
+	const [shouldRender, setShouldRender] = useState(false);
+
+	const handleOpen = () => {
+		setShouldRender(true);
+		setIsOpen(true);
+	};
+
+	const handleClose = () => {
+		setIsOpen(false);
+		setTimeout(() => setShouldRender(false), 700);
+	};
 
 	return (
 		<nav className='w-full flex justify-between items-center lg:py-10 py-7 px-5'>
@@ -28,16 +39,16 @@ const Navbar = () => {
 			</div>
 
 			{/* Mobile Icon */}
-			<div className='lg:hidden block' onClick={() => setIsOpen(!isOpen)}>
+			<div className='lg:hidden block' onClick={handleOpen}>
 				<AlignJustify size={32} color="#ffffff" />
 			</div>
 
-			{isOpen &&
-				<div className='fixed top-0 left-0 w-full h-screen lg:hidden bg-secondary lg:py-10 py-7 px-5'>
+			{shouldRender &&
+				<div className={`fixed top-0 left-0 w-full h-screen lg:hidden bg-secondary lg:py-10 py-7 px-5 ${isOpen ? 'animate-slideInFromLeft' : 'animate-slideOutFromRight'}`}>
 					<div className='flex flex-col justify-between w-full h-full'>
 						<div className='flex justify-between items-center'>
 							<h1 className='text-white text-2xl'><span className='font-bold'>Kelvin</span> Ajayi</h1>
-							<X onClick={() => setIsOpen(!isOpen)} size={32} color="#ffffff" />
+							<X onClick={handleClose} size={32} color="#ffffff" />
 						</div>
 						<div className='flex flex-col gap-12 text-center'>
 							<CustomNavlink customClass='text-xl' to="#services">Service</CustomNavlink>

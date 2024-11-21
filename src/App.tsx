@@ -4,9 +4,8 @@ import { Navbar } from './components/navigation'
 
 export const App = () => {
   return (
-    // Hero Section
-    <MaxWidth>
-      <Navbar />
-    </MaxWidth>
+    <>
+      <MaxWidth><Navbar /></MaxWidth>
+    </>
   )
 }

@@ -57,7 +57,21 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
-			}
+			},
+			keyframes: {
+				slideInFromLeft: {
+					'0%': {transform: 'translateX(-100%)'},
+					'100%': {transform: 'translateX(0)'},
+				},
+				slideOutFromRight: {
+					'0%': {transform: 'translateX(0)'},
+					'100%': {transform: 'translateX(-100%)'},
+				},
+			},
+			animation: {
+				slideInFromLeft: 'slideInFromLeft 0.7s ease-in-out',
+				slideOutFromRight: 'slideOutFromRight 0.7s ease-in-out',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
