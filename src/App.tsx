@@ -6,7 +6,7 @@ import { Navbar } from './components/navigation'
 export const App = () => {
   return (
     <>
-      <MaxWidth className='h-screen'>
+      <MaxWidth>
         <Navbar />
         <Hero />
       </MaxWidth>
