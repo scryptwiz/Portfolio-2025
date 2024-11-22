@@ -1,8 +1,12 @@
+import Card from "./card"
+
 const Introduction = () => {
 	return (
-		<div className='flex md:flex-row flex-col justify-between items-center py-12'>
-			<div className='md:w-1/2 w-full'>
-				<h1>Project</h1>
+		<div className='flex md:flex-row flex-col-reverse justify-between items-center py-12 gap-10'>
+			<div className='md:w-1/2 w-full flex flex-col gap-3 shadow-xl'>
+				<Card />
+				<Card />
+				<Card />
 			</div>
 			<div className='md:w-1/2 w-full flex flex-col gap-7'>
 				<p className='tracking-wider text-sm'>Introduce</p>
