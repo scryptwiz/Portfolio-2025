@@ -2,12 +2,13 @@ import React, { ReactNode } from "react";
 
 interface MaxWidthProps {
 	className?: string;
+	id?: string;
 	children: ReactNode;
 }
 
-const MaxWidth: React.FC<MaxWidthProps> = ({ className = "", children }) => {
+const MaxWidth: React.FC<MaxWidthProps> = ({ className = "", children, id }) => {
 	return (
-		<div className={`app ${className}`}>
+		<div id={`${id}`} className={`app ${className}`}>
 			<div className='max-screen-width mx-auto h-full'>
 				{children}
 			</div>

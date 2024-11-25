@@ -1,17 +1,24 @@
-import { GitBranchPlus } from "lucide-react"
+import { FC } from "react";
+import { LucideIcon } from "lucide-react";
 
-const Card = () => {
+interface CardProps {
+	title: string;
+	description: string;
+	Icon: LucideIcon;
+}
+
+const Card: FC<CardProps> = ({ title, description, Icon }) => {
 	return (
 		<div className="bg-primary p-8 rounded-xl">
 			<div className="flex justify-between gap-3">
 				<div>
-					<h4 className="text-active text-2xl tracking-wider font-medium">Design</h4>
-					<p className="mt-2 tracking-wider text-sm">Create digital products with unique ideas</p>
+					<h4 className="text-active text-2xl tracking-wider font-medium">{title}</h4>
+					<p className="mt-2 tracking-wider text-sm">{description}</p>
 				</div>
-				<GitBranchPlus className="text-active text-lg" />
+				<Icon className="text-active text-lg" />
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default Card
+export default Card;
