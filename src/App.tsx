@@ -15,7 +15,7 @@ export const App = () => {
       {/* Service Section */}
       <MaxWidth id="services" className='bg-secondary px-5'><Introduction /></MaxWidth>
       {/* Projects section */}
-      <MaxWidth id="works" className='px-5'><Projects /></MaxWidth>
+      <MaxWidth id="works" className='bg-secondary px-5'><Projects /></MaxWidth>
     </>
   )
 }
