@@ -1,7 +1,7 @@
 const projects = () => {
 	return (
-		<section id="latest-works" className="py-20">
-			<div className="container mx-auto px-4">
+		<section className="py-20">
+			<div className="container mx-auto">
 				<div className="text-center mb-12">
 					<h2 className="text-white text-3xl md:text-4xl font-bold">Latest Works</h2>
 					<p className="text-gray-400 mt-2">Perfect solutions for digital experience</p>
