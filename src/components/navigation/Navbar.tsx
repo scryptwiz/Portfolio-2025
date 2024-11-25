@@ -18,14 +18,14 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className='w-full flex justify-between items-center lg:py-10 py-7 px-5'>
+		<nav className='w-full flex justify-between items-center lg:py-10 py-7 px-5 sticky top-0 bg-primary z-50'>
 			<div className='flex justify-between items-center gap-16'>
 				<h1 className='text-white text-2xl'><span className='font-bold'>Kelvin</span> Ajayi</h1>
 				<div className='lg:flex hidden gap-6 tracking-widest items-center'>
+					<CustomNavlink customClass='text-base' to="">Home</CustomNavlink>
 					<CustomNavlink customClass='text-base' to="#services">Service</CustomNavlink>
 					<CustomNavlink customClass='text-base' to="#works">Works</CustomNavlink>
 					<CustomNavlink customClass='text-base' to="#testimonies">Testimonies</CustomNavlink>
-					<CustomNavlink customClass='text-base' to="#contacts">Contacts</CustomNavlink>
 				</div>
 			</div>
 			<div className='lg:flex hidden items-center gap-5'>
@@ -51,10 +51,10 @@ const Navbar = () => {
 							<X onClick={handleClose} size={32} color="#ffffff" />
 						</div>
 						<div className='flex flex-col gap-12 text-center'>
+							<CustomNavlink onClick={handleClose} customClass='text-xl' to="">Home</CustomNavlink>
 							<CustomNavlink onClick={handleClose} customClass='text-xl' to="#services">Service</CustomNavlink>
 							<CustomNavlink onClick={handleClose} customClass='text-xl' to="#works">Works</CustomNavlink>
 							<CustomNavlink onClick={handleClose} customClass='text-xl' to="#testimonies">Testimonies</CustomNavlink>
-							<CustomNavlink onClick={handleClose} customClass='text-xl' to="#contacts">Contacts</CustomNavlink>
 						</div>
 						<div className='flex justify-between items-center'>
 							<Button variant="ghost">Facebook</Button>

@@ -32,3 +32,34 @@ body {
 .max-screen-width {
   @apply md:max-w-4xl lg:max-w-5xl 2xl:max-w-7xl;
 }
+
+.about-description ul {
+  @apply pt-5 list-none grid grid-cols-2;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, minmax(170px, 1fr));
+  }
+}
+
+.about-description li {
+  @apply relative pl-5 text-lg;
+}
+
+.about-description li::before {
+  content: "▹    ";
+  @apply absolute left-0 text-active;
+}
+
+/* Animation */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(10vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}

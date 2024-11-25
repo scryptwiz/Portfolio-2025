@@ -9,7 +9,7 @@ const projects = () => {
 
 				<div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 					<div className="relative bg-primary p-5 rounded-xl shadow-lg group hover:bg-gray-700 transition">
-						<img src="https://via.placeholder.com/400x200?text=Lewis+Project" className="w-full h-40 object-cover rounded-xl" />
+						<img src="https://via.placeholder.com/400x200?text=Lewis+Project" className="w-full h-48 object-cover rounded-xl" />
 						<div className="mt-4">
 							<h3 className="text-white text-xl font-semibold">Lewis</h3>
 							<p className="text-gray-400 text-sm mt-1">Javascript | PHP</p>
@@ -20,7 +20,7 @@ const projects = () => {
 					</div>
 
 					<div className="relative bg-primary p-5 rounded-xl shadow-lg group hover:bg-gray-700 transition">
-						<img src="https://via.placeholder.com/400x200?text=Finaco+Project" alt="Finaco Project" className="w-full h-40 object-cover rounded-xl" />
+						<img src="https://via.placeholder.com/400x200?text=Finaco+Project" alt="Finaco Project" className="w-full h-48 object-cover rounded-xl" />
 						<div className="mt-4">
 							<h3 className="text-white text-xl font-semibold">Finaco</h3>
 							<p className="text-gray-400 text-sm mt-1">GatsbyJS | React | HTML</p>
@@ -31,7 +31,7 @@ const projects = () => {
 					</div>
 
 					<div className="relative bg-primary p-5 rounded-xl shadow-lg group hover:bg-gray-700 transition">
-						<img src="https://via.placeholder.com/400x200?text=Focus+Project" alt="Focus Project" className="w-full h-40 object-cover rounded-xl" />
+						<img src="https://via.placeholder.com/400x200?text=Focus+Project" alt="Focus Project" className="w-full h-48 object-cover rounded-xl" />
 						<div className="mt-4">
 							<h3 className="text-white text-xl font-semibold">Focus</h3>
 							<p className="text-gray-400 text-sm mt-1">React | HTML</p>

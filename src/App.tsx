@@ -1,8 +1,5 @@
 import './App.css'
-import { Hero } from './components/hero'
-import { MaxWidth } from './components/layout'
-import { Navbar } from './components/navigation'
-import { Introduction, Projects } from './components/section'
+import { Hero, Introduction, MaxWidth, Navbar, Projects } from './components'
 
 export const App = () => {
   return (
