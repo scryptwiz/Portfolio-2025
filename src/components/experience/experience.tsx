@@ -74,15 +74,15 @@ const Experience: React.FC = () => {
 				{Object.keys(experienceItems).map((key) => (
 					<TabsContent key={key} value={key} className="pl-4 pr-">
 						<h3 className="text-lg font-semibold">
-							{experienceItems[key].jobTitle} <span className="text-active">@{key}</span>
+							{experienceItems[key].jobTitle} <span className="text-active">@ {key}</span>
 						</h3>
 						<p className="mt-2 text-sm">
 							{experienceItems[key].duration}
 						</p>
 						<ul className="mt-4 list-disc pl-5 space-y-2 job-description">
 							{experienceItems[key].desc.map((item, idx) => (
-								<FadeInAnimation delay={`${idx + 1}00ms`}>
-									<li key={idx} className="text-sm">
+								<FadeInAnimation key={idx} delay={`${idx + 1}00ms`}>
+									<li className="text-sm">
 										{item}
 									</li>
 								</FadeInAnimation>

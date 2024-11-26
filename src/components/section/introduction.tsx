@@ -6,10 +6,10 @@ const Introduction = () => {
 	const tech_stack = [
 		"Typescript",
 		"React.js",
+		"GSAP",
 		"Three Js",
 		"Node.js",
 		"Python",
-		"Javascript ES6+"
 	];
 
 	return (
