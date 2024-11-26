@@ -5,49 +5,65 @@ type ExperienceItem = {
 	jobTitle: string;
 	duration: string;
 	desc: string[];
+	languages?: string[];
 };
 
 const experienceItems: Record<string, ExperienceItem> = {
-	Amazon: {
-		jobTitle: "Software Development Engineer ",
-		duration: "JUL 2022 - PRESENT",
+	Bellfast: {
+		jobTitle: "Backend Engineer ",
+		duration: "JUL 2024 - NOV 2024",
+		languages: ["Node.js", "Nest.js", "SQL", "TypeScript"],
 		desc: [
-			"Led development of end-to-end region build automation across Route 53 (AWS's DNS web service). This enabled the launch of customer-facing global services in new regions within a day, a significant reduction from the previous time-frame of a month.",
-			"Re-built Route 53's core domain management and DNS systems to provide a better user experience to millions of customers."
+			"Designed and implemented a backend system from scratch, delivering a robust and efficient solution that significantly improved operational performance.",
+			"Developed a 70% lighter version of the previous backend structure, reducing system resource usage and improving processing efficiency.",
+			"Achieved a 90% reduction in operational costs through optimized architecture and resource-efficient design.",
+			"Delivered a fully functional backend to production within 4 months, streamlining the company's deployment timeline and supporting live operations."
 		]
 	},
-	Wattpad: {
-		jobTitle: "Associate Engineer ",
-		duration: "MAY 2020 - APR 2021",
+	Digit: {
+		jobTitle: "Fullstack Engineer ",
+		duration: "JAN 2023 - PRESENT",
+		languages: ["React.js", "Remix", "Angular", "Tailwind CSS", "TypeScript", "Docker", "CentOS", "SQL", "Nest.js", "JIRA (Agile Workflow)", "AnyDesk", "API Development", "API Documentation", "Ant Design", "Email Newsletter Design", "User Experience Design (UED)", "User Interface Design", "Linux Server", "Networking"],
 		desc: [
-			"Developed a responsive React web page (the new Story Details) from scratch, both on client and server side, for an app with massive scale (2 billion daily requests).",
-			"Iteratively built web experiences for 80 million users across high-traffic pages.",
-			"Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations."
+			"Collaborated within a cross-functional team of 3 backend developers, 3 frontend developers, and a project manager to deliver customized software solutions for diverse clients.",
+			"Managed and mentored an intern, ensuring successful integration and productivity within the team.",
+			"Developed and maintained a robust Hospital Management System (HMS) with a local server setup, server monitoring, and efficient operation using CentOS, Docker, SQL, NestJS, and Angular.",
+			"Implemented DevOps practices by setting up and monitoring servers using AnyDesk, optimizing infrastructure with Docker containers, and managing deployments for seamless client operations.",
+			"Built and deployed frontend interfaces for a ticket management system and driver license management system using Angular, and an e-commerce system using React.",
+			"Specialized in backend server architecture and infrastructure, optimizing reliability and scalability for high-traffic client applications.",
+			"Designed and documented APIs, ensuring robust integration and clear guidance for development teams and external partners."
 		]
 	},
-	"University of Toronto": {
-		jobTitle: "Research Engineer ",
-		duration: "MAY 2021 - SEPT 2021",
+	Konnect: {
+		jobTitle: "Frontend Engineer ",
+		duration: "JAN 2023 - NOV 2024",
+		languages: ["React.js", "Vite", "Tailwind CSS", "Ant Design", "Axios", "Redux"],
 		desc: [
-			"Developed and researched an NLP-based framework using state-of-the-art tools like Spacy and Stanza to facilitate the derivation of requirements from health data by leveraging syntactic dependencies, entity-recognition and rule-based match-making.",
-			"Application selected for DCS Research Award ($4,000) as part of the 'Visualizing Privacy Analysis Results' project led by Professor Marsha Chechik."
+			"Developed a feature-rich e-commerce web application, including a wallet system and a restaurant feature, as part of a collaborative team with 2 other frontend developers and 2 backend developers.",
+			"Increased project speed by 30% through optimized workflows and efficient frontend development, earning positive feedback from the client.",
+			"Built an admin system for monitoring transactions, providing robust oversight and management capabilities.",
+			"Consumed APIs and integrated them seamlessly into the frontend."
 		]
 	},
-	Centivizer: {
-		jobTitle: "Software Developer ",
-		duration: "SEPT 2019 - APR 2020",
+	Ecla: {
+		jobTitle: "Frontend Developer ",
+		duration: "JUN 2022 - DEC 2022",
+		languages: ["React.js", "Tailwind CSS"],
 		desc: [
-			"Developed interactive and neural-activation technologies to stimulate physical and cognitive functions in order to slow the progression of neurodegenerative disorders.",
-			"Leveraged WebRTC to develop and maintain a Node.js online video-streaming platform in real-time competitive-mode games to research the effects of active stimulation for those suffering from dementia."
+			"Collaborated with two Web3 developers to integrate decentralized functionalities into the platform, contributing to the design and development of three Web3-based projects.",
+			"Led the frontend design of the platform using React.js and Tailwind CSS, ensuring a user-friendly and responsive interface.",
+			"Worked closely with a project manager to prioritize and implement features while maintaining timelines in an agile environment.",
 		]
 	},
-	"Orange Gate": {
+	"SQI College of ICT": {
 		jobTitle: "Software Developer Intern ",
-		duration: "MAY 2019 - AUG 2019",
+		duration: "OCT 2021 - FEB 2022",
 		desc: [
-			"Developed a Node.js smart home system through Facebook’s Messenger integrated with Bocco sensors and other smart devices (Nest camera, TPLink smart plugs) to derive conclusions about the current state of the home.",
-			"Identified continuous improvements in data quality, design reports and coding activities, presenting results and findings to internal business stakeholders.",
-			"Relevant technologies/tools used: DialogFlow, Vision, AutoML, Messenger Bot API, MongoDB."
+			"Mentored and trained approximately 300 students in basic web development, specifically focusing on HTML and CSS, empowering them to transition from tech novices to capable developers with a solid understanding of web design principles.",
+			"Developed and delivered engaging instructional materials, including tutorials, coding exercises, and live demonstrations, helping students build practical skills while fostering an interactive and supportive learning environment.",
+			"Provided one-on-one assistance and group support, identifying students' learning needs and offering tailored guidance to ensure successful skill acquisition.",
+			"Organized and led weekly coding workshops, where students could collaborate, share insights, and develop their projects, encouraging peer-to-peer learning and community-building.",
+			"Received positive feedback from students for creating an encouraging atmosphere that helped them build confidence in their technical abilities and inspired them to pursue further learning in web development."
 		]
 	}
 };
@@ -56,7 +72,7 @@ const Experience: React.FC = () => {
 	return (
 		<div className="flex gap-6">
 			{/* ShadCN Tabs (Vertical) */}
-			<Tabs defaultValue="Amazon" orientation="vertical" className="flex flex-col md:flex-row">
+			<Tabs defaultValue="Bellfast" orientation="vertical" className="flex flex-col md:flex-row">
 				{/* Tabs List */}
 				<TabsList className="flex flex-col gap-4 border-r-2 border-gray-200 pr-4 text-left h-full">
 					{Object.keys(experienceItems).map((key) => (
@@ -79,6 +95,14 @@ const Experience: React.FC = () => {
 						<p className="mt-2 text-sm">
 							{experienceItems[key].duration}
 						</p>
+						{experienceItems[key].languages && (
+							<div className="mt-2">
+								<p className="text-sm tracking-wider leading-loose">
+									<span className="text-sm font-bold">Technologies: </span>
+									{experienceItems[key].languages.join(' | ')}
+								</p>
+							</div>
+						)}
 						<ul className="mt-4 list-disc pl-5 space-y-2 job-description">
 							{experienceItems[key].desc.map((item, idx) => (
 								<FadeInAnimation key={idx} delay={`${idx + 1}00ms`}>

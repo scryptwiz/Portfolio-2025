@@ -30,7 +30,7 @@ const Introduction = () => {
 						<ul className="tech-stack">
 							{tech_stack.map(function (tech_item, i) {
 								return (
-									<FadeInAnimation delay={`${i + 1}00ms`}>
+									<FadeInAnimation key={i} delay={`${i + 1}00ms`}>
 										<li>{tech_item}</li>
 									</FadeInAnimation>
 								);
