@@ -6,7 +6,7 @@ const Hero = () => {
 	return (
 		<div className="flex flex-col items-center px-5 my-12">
 			<Typist typingDelay={120} cursor={<span className='cursor blink text-active'>|</span>} hideCursorWhenDone={true}>
-				<h1 className="text-5xl font-bold">Hi,
+				<h1 className="text-4xl md:text-5xl  font-bold">Hi,
 					<span className='text-active'> Kelvin </span>
 					here
 					<Typist.Backspace count={4} />
