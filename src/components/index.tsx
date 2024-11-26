@@ -4,7 +4,7 @@ export { default as MaxWidth } from './layout/MaxWidth'
 // Components
 export { default as CustomNavLink } from "./navigation/CustomNavlink";
 export { default as Card } from "./section/card";
-export { default as FadeInSection } from "./common/fadeInSection";
+export { default as FadeInAnimation } from "./common/FadeInAnimation";
 
 // Sections
 export { default as Hero } from './hero/hero'

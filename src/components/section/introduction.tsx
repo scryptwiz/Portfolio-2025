@@ -1,6 +1,6 @@
 import { Box, Code, Server } from "lucide-react"
 import Card from "./card"
-import FadeInSection from "../common/fadeInSection";
+import FadeInAnimation from "../common/FadeInAnimation";
 
 const Introduction = () => {
 	const tech_stack = [
@@ -13,7 +13,7 @@ const Introduction = () => {
 	];
 
 	return (
-		<FadeInSection delay="0.5s">
+		<FadeInAnimation delay="0.5s">
 			<div className='flex md:flex-row flex-col-reverse justify-between items-center py-20 gap-10'>
 				<div className='md:w-1/2 w-full flex flex-col gap-3 shadow-xl'>
 					<Card title="Frontend Developer" description="Specializing in creating visually appealing and user-friendly web interfaces" Icon={Code} />
@@ -30,16 +30,16 @@ const Introduction = () => {
 						<ul className="tech-stack">
 							{tech_stack.map(function (tech_item, i) {
 								return (
-									<FadeInSection delay={`${i + 1}00ms`}>
+									<FadeInAnimation delay={`${i + 1}00ms`}>
 										<li>{tech_item}</li>
-									</FadeInSection>
+									</FadeInAnimation>
 								);
 							})}
 						</ul>
 					</div>
 				</div>
 			</div>
-		</FadeInSection>
+		</FadeInAnimation>
 	)
 }
 

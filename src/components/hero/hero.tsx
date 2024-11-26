@@ -1,6 +1,6 @@
 import Typist from 'react-typist-component';
 import { HeroImage } from "@/assets/images"
-import FadeInSection from "../common/fadeInSection"
+import FadeInAnimation from '../common/FadeInAnimation';
 
 const Hero = () => {
 	return (
@@ -13,10 +13,10 @@ const Hero = () => {
 					here.
 				</h1>
 			</Typist>
-			<FadeInSection>
+			<FadeInAnimation>
 				<p className="max-w-lg mx-auto text-center font-medium mt-3 tracking-wide text-sm">I design 3D visuals and UIs for apps and websites, and specialize in full-stack development.</p>
 				<img src={HeroImage} alt="Kelvin's hero image" className="md:max-w-lg w-full h-auto mt-8" />
-			</FadeInSection>
+			</FadeInAnimation>
 		</div>
 	)
 }

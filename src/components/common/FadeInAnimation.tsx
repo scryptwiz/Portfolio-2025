@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
 
-interface FadeInSectionProps {
+interface FadeInAnimationProps {
 	children: ReactNode;
 	delay?: string;
 }
 
-export default function FadeInSection (props: FadeInSectionProps) {
+export default function FadeInAnimation (props: FadeInAnimationProps) {
 	const [isVisible, setVisible] = React.useState(false);
 	const domRef = React.useRef<HTMLDivElement | null>(null);
 
