@@ -63,3 +63,16 @@ body {
   transform: none;
   visibility: visible;
 }
+
+.job-description {
+  @apply list-none
+}
+
+.job-description li::before {
+  content: "▹    ";
+  @apply absolute left-0 text-active;
+}
+
+.job-description li {
+  @apply relative pl-7 pb-4 text-lg;
+}
