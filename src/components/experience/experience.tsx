@@ -9,17 +9,6 @@ type ExperienceItem = {
 };
 
 const experienceItems: Record<string, ExperienceItem> = {
-	Bellfast: {
-		jobTitle: "Backend Engineer ",
-		duration: "JUL 2024 - NOV 2024",
-		languages: ["Node.js", "Nest.js", "SQL", "TypeScript"],
-		desc: [
-			"Designed and implemented a backend system from scratch, delivering a robust and efficient solution that significantly improved operational performance.",
-			"Developed a 70% lighter version of the previous backend structure, reducing system resource usage and improving processing efficiency.",
-			"Achieved a 90% reduction in operational costs through optimized architecture and resource-efficient design.",
-			"Delivered a fully functional backend to production within 4 months, streamlining the company's deployment timeline and supporting live operations."
-		]
-	},
 	Digit: {
 		jobTitle: "Fullstack Engineer ",
 		duration: "JAN 2023 - PRESENT",
@@ -32,6 +21,17 @@ const experienceItems: Record<string, ExperienceItem> = {
 			"Built and deployed frontend interfaces for a ticket management system and driver license management system using Angular, and an e-commerce system using React.",
 			"Specialized in backend server architecture and infrastructure, optimizing reliability and scalability for high-traffic client applications.",
 			"Designed and documented APIs, ensuring robust integration and clear guidance for development teams and external partners."
+		]
+	},
+	Bellfast: {
+		jobTitle: "Backend Engineer ",
+		duration: "JUL 2024 - NOV 2024",
+		languages: ["Node.js", "Nest.js", "SQL", "TypeScript"],
+		desc: [
+			"Designed and implemented a backend system from scratch, delivering a robust and efficient solution that significantly improved operational performance.",
+			"Developed a 70% lighter version of the previous backend structure, reducing system resource usage and improving processing efficiency.",
+			"Achieved a 90% reduction in operational costs through optimized architecture and resource-efficient design.",
+			"Delivered a fully functional backend to production within 4 months, streamlining the company's deployment timeline and supporting live operations."
 		]
 	},
 	Konnect: {
@@ -70,52 +70,55 @@ const experienceItems: Record<string, ExperienceItem> = {
 
 const Experience: React.FC = () => {
 	return (
-		<div className="flex gap-6">
-			{/* ShadCN Tabs (Vertical) */}
-			<Tabs defaultValue="Bellfast" orientation="vertical" className="flex flex-col md:flex-row">
-				{/* Tabs List */}
-				<TabsList className="flex flex-col gap-4 border-r-2 border-gray-200 pr-4 text-left h-full">
-					{Object.keys(experienceItems).map((key) => (
-						<TabsTrigger
-							key={key}
-							value={key}
-							className="text-left py-2 text-sm font-medium hover:text-active focus:outline-none ring-0 focus:border-active w-full"
-						>
-							{key}
-						</TabsTrigger>
-					))}
-				</TabsList>
+		<>
+			<p className='tracking-wider text-sm mb-7 font-semibold'>/ Experience</p>
+			<div className="flex gap-6">
+				{/* ShadCN Tabs (Vertical) */}
+				<Tabs defaultValue="Bellfast" orientation="vertical" className="flex flex-col md:flex-row">
+					{/* Tabs List */}
+					<TabsList className="flex flex-wrap md:gap-4 md:border-r-2 border-gray-200 pr-4 text-left w-full md:w-auto md:flex-col h-full mb-5 md:mb-0">
+						{Object.keys(experienceItems).map((key) => (
+							<TabsTrigger
+								key={key}
+								value={key}
+								className="text-left md:py-2 text-sm font-medium hover:text-active focus:outline-none ring-0 focus:border-active"
+							>
+								{key}
+							</TabsTrigger>
+						))}
+					</TabsList>
 
-				{/* Tabs Content */}
-				{Object.keys(experienceItems).map((key) => (
-					<TabsContent key={key} value={key} className="pl-4 pr-">
-						<h3 className="text-lg font-semibold">
-							{experienceItems[key].jobTitle} <span className="text-active">@ {key}</span>
-						</h3>
-						<p className="mt-2 text-sm">
-							{experienceItems[key].duration}
-						</p>
-						{experienceItems[key].languages && (
-							<div className="mt-2">
-								<p className="text-sm tracking-wider leading-loose">
-									<span className="text-sm font-bold">Technologies: </span>
-									{experienceItems[key].languages.join(' | ')}
-								</p>
-							</div>
-						)}
-						<ul className="mt-4 list-disc pl-5 space-y-2 job-description">
-							{experienceItems[key].desc.map((item, idx) => (
-								<FadeInAnimation key={idx} delay={`${idx + 1}00ms`}>
-									<li className="text-sm">
-										{item}
-									</li>
-								</FadeInAnimation>
-							))}
-						</ul>
-					</TabsContent>
-				))}
-			</Tabs>
-		</div>
+					{/* Tabs Content */}
+					{Object.keys(experienceItems).map((key) => (
+						<TabsContent key={key} value={key} className="md:pl-4 pr-">
+							<h3 className="text-lg font-semibold">
+								{experienceItems[key].jobTitle} <span className="text-active">@ {key}</span>
+							</h3>
+							<p className="mt-2 md:text-sm text-xs">
+								{experienceItems[key].duration}
+							</p>
+							{experienceItems[key].languages && (
+								<div className="mt-2">
+									<p className="md:text-sm text-xs tracking-wider leading-loose">
+										<span className="font-bold">Technologies: </span>
+										{experienceItems[key].languages.join(' | ')}
+									</p>
+								</div>
+							)}
+							<ul className="mt-4 list-disc pl-5 space-y-2 job-description">
+								{experienceItems[key].desc.map((item, idx) => (
+									<FadeInAnimation key={idx} delay={`${idx + 1}00ms`}>
+										<li className="md:text-sm text-xs leading-loose tracking-wider">
+											{item}
+										</li>
+									</FadeInAnimation>
+								))}
+							</ul>
+						</TabsContent>
+					))}
+				</Tabs>
+			</div>
+		</>
 	)
 }
 

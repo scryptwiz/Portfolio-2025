@@ -42,7 +42,7 @@ body {
 }
 
 .about-description li {
-  @apply relative pl-5 text-lg;
+  @apply relative pl-5 text-sm;
 }
 
 .about-description li::before {
@@ -74,5 +74,5 @@ body {
 }
 
 .job-description li {
-  @apply relative pl-7 pb-4 text-lg;
+  @apply relative pl-7 pb-4 tracking-wider;
 }

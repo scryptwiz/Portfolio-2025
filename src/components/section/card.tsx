@@ -13,7 +13,7 @@ const Card: FC<CardProps> = ({ title, description, Icon }) => {
 			<div className="flex justify-between gap-3">
 				<div>
 					<h4 className="text-active text-2xl tracking-wider font-medium">{title}</h4>
-					<p className="mt-2 tracking-wider text-sm">{description}</p>
+					<p className="mt-2 tracking-wider text-sm leading-relaxed">{description}</p>
 				</div>
 				<Icon className="text-active text-lg" />
 			</div>

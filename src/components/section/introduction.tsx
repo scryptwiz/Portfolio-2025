@@ -21,11 +21,11 @@ const Introduction = () => {
 					<Card title="Backend Developer" description="Expert in building robust and scalable server-side applications" Icon={Server} />
 				</div>
 				<div className='md:w-1/2 w-full flex flex-col gap-7'>
-					<p className='tracking-wider text-sm'>Introduce</p>
-					<h1 className='font-medium text-5xl tracking-wider'>Hello! I'm Kelvin Ajayi</h1>
-					<p className='text-2xl italic tracking-wider'>Every great design with an even better story</p>
-					<p className='text-sm tracking-wider'>I am a passionate developer with expertise in both frontend and backend technologies. I enjoy creating seamless user experiences and robust server-side applications. My skills also extend to developing interactive 3D graphics using Three.js, bringing creative ideas to life. I have been recognized with award-winning projects in the field.</p>
-					<div className="about-description">
+					<p className='tracking-wider font-semibold text-sm'>/ About Me</p>
+					<h1 className='font-medium text-4xl md:text-5xl tracking-wider'>Hello! I'm Kelvin Ajayi</h1>
+					<p className='text-xl italic tracking-wider'>Every great design with an even better story</p>
+					<p className='text-sm tracking-wider leading-relaxed'>I am a passionate developer with expertise in both frontend and backend technologies. I enjoy creating seamless user experiences and robust server-side applications. My skills also extend to developing interactive 3D graphics using Three.js, bringing creative ideas to life. I have been recognized with award-winning projects in the field.</p>
+					<div className="about-description text-sm leading-relaxed">
 						{"Here are some technologies I have been working with:"}
 						<ul className="tech-stack">
 							{tech_stack.map(function (tech_item, i) {
