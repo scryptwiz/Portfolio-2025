@@ -8,7 +8,7 @@ const projects = () => {
 			techStack: "React.Js | TailwindCSS",
 			image: "https://via.placeholder.com/400x200?text=ECLA+Project",
 			altText: "ECLA Project",
-			redirectUrl: "https://example.com/lewis"
+			redirectUrl: "https://eclanft.netlify.app/"
 		},
 		{
 			title: "CyberQueens",
@@ -16,7 +16,7 @@ const projects = () => {
 			techStack: "React | TailwindCSS | Contentful",
 			image: "https://via.placeholder.com/400x200?text=CyberQueens+Project",
 			altText: "CyberQueens Project",
-			redirectUrl: "https://example.com/finaco"
+			redirectUrl: "https://cyberqueensnfts.netlify.app/"
 		},
 		{
 			title: "Pubbles",
@@ -24,7 +24,7 @@ const projects = () => {
 			techStack: "React | TailwindCSS | Contentful",
 			image: "https://via.placeholder.com/400x200?text=Pubbles+Project",
 			altText: "Pubbles Project",
-			redirectUrl: "https://example.com/focus"
+			redirectUrl: "https://pubblesnft.netlify.app/"
 		},
 		{
 			title: "Apein",
@@ -32,7 +32,7 @@ const projects = () => {
 			techStack: "React | TailwindCSS",
 			image: "https://via.placeholder.com/400x200?text=Pubbles+Project",
 			altText: "Apein Project",
-			redirectUrl: "https://example.com/focus"
+			redirectUrl: "https://apein.netlify.app/"
 		},
 		{
 			title: "Twitter",
