@@ -74,7 +74,7 @@ const Experience: React.FC = () => {
 			<p className='tracking-wider text-sm mb-7 font-semibold'>/ Experience</p>
 			<div className="flex gap-6">
 				{/* ShadCN Tabs (Vertical) */}
-				<Tabs defaultValue="Bellfast" orientation="vertical" className="flex flex-col md:flex-row">
+				<Tabs defaultValue="Digit" orientation="vertical" className="flex flex-col md:flex-row">
 					{/* Tabs List */}
 					<TabsList className="flex flex-wrap md:gap-4 md:border-r-2 border-gray-200 pr-4 text-left w-full md:w-auto md:flex-col h-full mb-5 md:mb-0">
 						{Object.keys(experienceItems).map((key) => (
@@ -92,7 +92,7 @@ const Experience: React.FC = () => {
 					{Object.keys(experienceItems).map((key) => (
 						<TabsContent key={key} value={key} className="md:pl-4 pr-">
 							<h3 className="text-lg font-semibold">
-								{experienceItems[key].jobTitle} <span className="text-active">@ {key}</span>
+								{experienceItems[key].jobTitle} <span className="text-active">@{key}</span>
 							</h3>
 							<p className="mt-2 md:text-sm text-xs">
 								{experienceItems[key].duration}

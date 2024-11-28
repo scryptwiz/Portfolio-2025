@@ -9,6 +9,6 @@ export { default as FadeInAnimation } from "./common/FadeInAnimation";
 // Sections
 export { default as Hero } from './hero/hero'
 export { default as Introduction } from './section/introduction'
-export { default as Projects } from './section/projects'
+export { default as Projects } from './projects/projects'
 export { default as Navbar } from "./navigation/Navbar";
 export { default as Experience } from "./experience/experience";
