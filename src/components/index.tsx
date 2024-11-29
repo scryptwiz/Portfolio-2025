@@ -12,3 +12,4 @@ export { default as Introduction } from './section/introduction'
 export { default as Projects } from './projects/projects'
 export { default as Navbar } from "./navigation/Navbar";
 export { default as Experience } from "./experience/experience";
+export { default as Testimonials } from './testimonials/testimonials'
