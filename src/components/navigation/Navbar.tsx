@@ -30,12 +30,18 @@ const Navbar = () => {
 			</div>
 			<div className='lg:flex hidden items-center gap-5'>
 				<div className='flex gap-2 items-center tracking-widest text-lg'>
-					<Button variant="ghost"><Twitter color='white' /> Twitter</Button>
-					<Button variant="ghost"><Github color='white' /> Github</Button>
+					<a href="https://x.com/KelvinAjayi8" target="_blank" rel="noopener noreferrer" className="no-underline" >
+						<Button variant="ghost"><Twitter color='white' /> Twitter</Button>
+					</a>
+					<a href="https://github.com/scryptwiz" target="_blank" rel="noopener noreferrer" className="no-underline">
+						<Button variant="ghost"><Github color='white' /> Github</Button>
+					</a>
 				</div>
-				<Button variant="secondary" className='rounded-full p-5' size="icon">
-					<Mail color='#64f4ac' />
-				</Button>
+				<a href="mailto:kelvide7@gmail.com" className="no-underline">
+					<Button variant="secondary" className='rounded-full p-5' size="icon">
+						<Mail color='#64f4ac' />
+					</Button>
+				</a>
 			</div>
 
 			{/* Mobile Icon */}
@@ -57,9 +63,15 @@ const Navbar = () => {
 							<CustomNavlink onClick={handleClose} customClass='text-xl' to="#testimonies">Testimonies</CustomNavlink>
 						</div>
 						<div className='flex justify-between items-center'>
-							<Button variant="ghost">Facebook</Button>
-							<Button variant="ghost">Instagram</Button>
-							<Button variant="ghost">Twitter</Button>
+							<a href="https://github.com/scryptwiz" target="_blank" rel="noopener noreferrer" className="no-underline" >
+								<Button variant="ghost">Github</Button>
+							</a>
+							<a href="https://x.com/KelvinAjayi8" target="_blank" rel="noopener noreferrer" className="no-underline">
+								<Button variant="ghost">Twitter</Button>
+							</a>
+							<a href="mailto:kelvide7@gmail.com" className="no-underline" >
+								<Button variant="ghost">Mail</Button>
+							</a>
 						</div>
 					</div>
 				</div>
