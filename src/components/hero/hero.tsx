@@ -4,7 +4,7 @@ import FadeInAnimation from '../common/FadeInAnimation';
 
 const Hero = () => {
 	return (
-		<div className="flex flex-col items-center px-5 my-12">
+		<div className="flex flex-col items-center pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-mb:pb-32 px-5">
 			<Typist typingDelay={120} cursor={<span className='cursor blink text-active'>|</span>} hideCursorWhenDone={true}>
 				<h1 className="text-3xl md:text-5xl font-bold text-center">Hi,
 					<span className='text-active'> Kelvin </span>

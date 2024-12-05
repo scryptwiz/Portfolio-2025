@@ -16,7 +16,7 @@ const projects = () => {
 			techStack: "React | TailwindCSS | Contentful",
 			image: "https://via.placeholder.com/400x200?text=CyberQueens+Project",
 			altText: "CyberQueens Project",
-			redirectUrl: "https://cyberqueensnfts.netlify.app/"
+			redirectUrl: "https://https://cyberqueennft.netlify.app/"
 		},
 		{
 			title: "Pubbles",

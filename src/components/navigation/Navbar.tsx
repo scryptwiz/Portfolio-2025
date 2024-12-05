@@ -22,10 +22,10 @@ const Navbar = () => {
 			<div className='flex justify-between items-center gap-16'>
 				<h1 className='text-white text-2xl'><span className='font-bold'>Kelvin</span> Ajayi</h1>
 				<div className='lg:flex hidden gap-6 tracking-widest items-center'>
-					<CustomNavlink customClass='text-base' to="">Home</CustomNavlink>
-					<CustomNavlink customClass='text-base' to="#services">Service</CustomNavlink>
-					<CustomNavlink customClass='text-base' to="#works">Works</CustomNavlink>
-					<CustomNavlink customClass='text-base' to="#testimonies">Testimonies</CustomNavlink>
+					<CustomNavlink customClass='text-base' to="hero">Home</CustomNavlink>
+					<CustomNavlink customClass='text-base' to="services">Service</CustomNavlink>
+					<CustomNavlink customClass='text-base' to="works">Works</CustomNavlink>
+					<CustomNavlink customClass='text-base' to="testimonies">Testimonies</CustomNavlink>
 				</div>
 			</div>
 			<div className='lg:flex hidden items-center gap-5'>
@@ -50,17 +50,17 @@ const Navbar = () => {
 			</div>
 
 			{shouldRender &&
-				<div className={`fixed top-0 left-0 w-full h-screen lg:hidden bg-secondary lg:py-10 py-7 px-5 ${isOpen ? 'animate-slideInFromLeft' : 'animate-slideOutFromRight'}`}>
+				<div className={`w-full h-screen lg:hidden bg-secondary lg:py-10 py-7 px-5 ${isOpen ? 'animate-slideInFromLeft' : 'animate-slideOutFromRight'}`}>
 					<div className='flex flex-col justify-between w-full h-full'>
 						<div className='flex justify-between items-center'>
 							<h1 className='text-white text-2xl'><span className='font-bold'>Kelvin</span> Ajayi</h1>
 							<X onClick={handleClose} size={32} color="#ffffff" />
 						</div>
 						<div className='flex flex-col gap-12 text-center'>
-							<CustomNavlink onClick={handleClose} customClass='text-xl' to="">Home</CustomNavlink>
-							<CustomNavlink onClick={handleClose} customClass='text-xl' to="#services">Service</CustomNavlink>
-							<CustomNavlink onClick={handleClose} customClass='text-xl' to="#works">Works</CustomNavlink>
-							<CustomNavlink onClick={handleClose} customClass='text-xl' to="#testimonies">Testimonies</CustomNavlink>
+							<CustomNavlink onClick={handleClose} customClass='text-xl' to="hero">Home</CustomNavlink>
+							<CustomNavlink onClick={handleClose} customClass='text-xl' to="services">Service</CustomNavlink>
+							<CustomNavlink onClick={handleClose} customClass='text-xl' to="works">Works</CustomNavlink>
+							<CustomNavlink onClick={handleClose} customClass='text-xl' to="testimonies">Testimonies</CustomNavlink>
 						</div>
 						<div className='flex justify-between items-center'>
 							<a href="https://github.com/scryptwiz" target="_blank" rel="noopener noreferrer" className="no-underline" >
