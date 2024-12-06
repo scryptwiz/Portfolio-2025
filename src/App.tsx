@@ -6,7 +6,7 @@ export const App = () => {
       {/* Navbar Section */}
       <MaxWidth className='fixed top-0 left-0 w-full bg-primary z-50'><Navbar /></MaxWidth>
       {/* Hero Section */}
-      <MaxWidth id="hero"><Hero /></MaxWidth>
+      <MaxWidth><Hero /></MaxWidth>
       {/* Service Section */}
       <MaxWidth id="services" className='bg-secondary px-5'><Introduction /></MaxWidth>
       {/* Experience Section */}
