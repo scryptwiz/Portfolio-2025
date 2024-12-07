@@ -13,7 +13,7 @@ const Testimonials = () => {
 			id: 1,
 			rating: 4.5,
 			feedback:
-				"Daniel was a real pleasure to work with and we look forward to working with him again. He's definitely the kind of designer you can trust with a project from start to finish.",
+				"Kelvin was a real pleasure to work with and we look forward to working with him again. He's definitely the kind of designer you can trust with a project from start to finish.",
 			name: "Benjamin Bryant",
 			role: "VP & Co-Founder",
 			company: "Wiser",
@@ -23,7 +23,7 @@ const Testimonials = () => {
 			id: 2,
 			rating: 5.0,
 			feedback:
-				"Working with Daniel has been one of the most seamless experiences. His attention to detail and professionalism exceeded expectations.",
+				"Working with Kelvin has been one of the most seamless experiences. His attention to detail and professionalism exceeded expectations.",
 			name: "Raaid Hossain",
 			role: "Project Management",
 			company: "Focuslab",
@@ -33,7 +33,7 @@ const Testimonials = () => {
 			id: 3,
 			rating: 4.0,
 			feedback:
-				"Daniel delivered exceptional designs with a clear focus on user experience. Highly recommend him for any project.",
+				"Kelvin delivered exceptional designs with a clear focus on user experience. Highly recommend him for any project.",
 			name: "Logan Cee",
 			role: "UI/UX Designer",
 			company: "LoganCee",

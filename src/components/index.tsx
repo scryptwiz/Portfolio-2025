@@ -10,6 +10,7 @@ export { default as FadeInAnimation } from "./common/FadeInAnimation";
 export { default as Hero } from './hero/hero'
 export { default as Introduction } from './section/introduction'
 export { default as Projects } from './projects/projects'
+export { default as Carousel_Project } from './projects/carousel_project'
 export { default as Navbar } from "./navigation/Navbar";
 export { default as Experience } from "./experience/experience";
 export { default as Testimonials } from './testimonials/testimonials'
