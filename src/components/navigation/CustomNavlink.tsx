@@ -18,7 +18,7 @@ const CustomNavlink: React.FC<CustomNavLinkProps> = ({ to, children, customClass
 	const isActive = location.hash === to;
 
 	return (
-		<LinkScroll to={to} onClick={onClick} className={`relative font-medium transition-all duration-700 ease-in-out cursor-pointer hover:text-active ${isActive ? "text-active scale-110 font-bold" : "text-inherit"} ${customClass}`}>
+		<LinkScroll to={to} offset={-100} spy smooth onClick={onClick} className={`relative font-medium transition-all duration-700 ease-in-out cursor-pointer hover:text-active ${isActive ? "text-active scale-110 font-bold" : "text-inherit"} ${customClass}`}>
 			<span>
 				{isActive && <p className='inline mr-1'>&lt;</p>}
 				{children}
