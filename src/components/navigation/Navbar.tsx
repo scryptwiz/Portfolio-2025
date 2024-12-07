@@ -18,39 +18,40 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className='w-full flex justify-between items-center lg:py-10 py-7 px-5 sticky top-0 bg-primary z-50'>
-			<div className='flex justify-between items-center gap-16'>
-				<h1 className='text-white text-2xl'><span className='font-bold'>Kelvin</span> Ajayi</h1>
-				<div className='lg:flex hidden gap-6 tracking-widest items-center'>
-					<CustomNavlink customClass='text-base' to="hero">Home</CustomNavlink>
-					<CustomNavlink customClass='text-base' to="services">Service</CustomNavlink>
-					<CustomNavlink customClass='text-base' to="works">Works</CustomNavlink>
-					<CustomNavlink customClass='text-base' to="testimonies">Testimonies</CustomNavlink>
+		<>
+			<nav className='w-full flex justify-between items-center lg:py-10 py-7 px-5 sticky top-0 bg-primary z-50'>
+				<div className='flex justify-between items-center gap-16'>
+					<h1 className='text-white text-2xl'><span className='font-bold'>Kelvin</span> Ajayi</h1>
+					<div className='lg:flex hidden gap-6 tracking-widest items-center'>
+						<CustomNavlink customClass='text-base' to="hero">Home</CustomNavlink>
+						<CustomNavlink customClass='text-base' to="services">Service</CustomNavlink>
+						<CustomNavlink customClass='text-base' to="works">Works</CustomNavlink>
+						<CustomNavlink customClass='text-base' to="testimonies">Testimonies</CustomNavlink>
+					</div>
 				</div>
-			</div>
-			<div className='lg:flex hidden items-center gap-5'>
-				<div className='flex gap-2 items-center tracking-widest text-lg'>
-					<a href="https://x.com/KelvinAjayi8" target="_blank" rel="noopener noreferrer" className="no-underline" >
-						<Button variant="ghost"><Twitter color='white' /> Twitter</Button>
-					</a>
-					<a href="https://github.com/scryptwiz" target="_blank" rel="noopener noreferrer" className="no-underline">
-						<Button variant="ghost"><Github color='white' /> Github</Button>
+				<div className='lg:flex hidden items-center gap-5'>
+					<div className='flex gap-2 items-center tracking-widest text-lg'>
+						<a href="https://x.com/KelvinAjayi8" target="_blank" rel="noopener noreferrer" className="no-underline" >
+							<Button variant="ghost"><Twitter color='white' /> Twitter</Button>
+						</a>
+						<a href="https://github.com/scryptwiz" target="_blank" rel="noopener noreferrer" className="no-underline">
+							<Button variant="ghost"><Github color='white' /> Github</Button>
+						</a>
+					</div>
+					<a href="mailto:kelvide7@gmail.com" className="no-underline">
+						<Button variant="secondary" className='rounded-full p-5' size="icon">
+							<Mail color='#64f4ac' />
+						</Button>
 					</a>
 				</div>
-				<a href="mailto:kelvide7@gmail.com" className="no-underline">
-					<Button variant="secondary" className='rounded-full p-5' size="icon">
-						<Mail color='#64f4ac' />
-					</Button>
-				</a>
-			</div>
 
-			{/* Mobile Icon */}
-			<div className='lg:hidden block' onClick={handleOpen}>
-				<AlignJustify size={32} color="#ffffff" />
-			</div>
-
+				{/* Mobile Icon */}
+				<div className='lg:hidden block' onClick={handleOpen}>
+					<AlignJustify size={32} color="#ffffff" />
+				</div>
+			</nav>
 			{shouldRender &&
-				<div className={`w-full h-screen lg:hidden bg-secondary lg:py-10 py-7 px-5 ${isOpen ? 'animate-slideInFromLeft' : 'animate-slideOutFromRight'}`}>
+				<div className={`absolute top-0 left-0 z-50 w-full h-screen lg:hidden bg-secondary lg:py-10 py-7 px-5 ${isOpen ? 'animate-slideInFromLeft' : 'animate-slideOutFromRight'}`}>
 					<div className='flex flex-col justify-between w-full h-full'>
 						<div className='flex justify-between items-center'>
 							<h1 className='text-white text-2xl'><span className='font-bold'>Kelvin</span> Ajayi</h1>
@@ -76,7 +77,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			}
-		</nav>
+		</>
 	)
 }
 
