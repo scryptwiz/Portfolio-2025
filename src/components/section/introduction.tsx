@@ -17,6 +17,7 @@ const Introduction = () => {
 			<div className='flex md:flex-row flex-col-reverse justify-between items-center py-20 gap-10'>
 				<div className='md:w-1/2 w-full flex flex-col gap-3 shadow-xl'>
 					<Card title="Frontend Developer" description="Specializing in creating visually appealing and user-friendly web interfaces" Icon={Code} />
+					<Card title="Mobile App Developer" description="Experienced in developing cross-platform mobile applications" Icon={Code} />
 					<Card title="Three JS Developer" description="Skilled in developing interactive 3D graphics and animations using Three.js" Icon={Box} />
 					<Card title="Backend Developer" description="Expert in building robust and scalable server-side applications" Icon={Server} />
 				</div>
