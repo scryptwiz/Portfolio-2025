@@ -10,7 +10,7 @@ type ExperienceItem = {
 
 const experienceItems: Record<string, ExperienceItem> = {
 	Digit: {
-		jobTitle: "Fullstack Engineer ",
+		jobTitle: "Fullstack Engineer (Part-time)",
 		duration: "JAN 2023 - PRESENT",
 		languages: ["React.js", "Remix", "Angular", "Tailwind CSS", "TypeScript", "Docker", "CentOS", "SQL", "Nest.js", "JIRA (Agile Workflow)", "AnyDesk", "API Development", "API Documentation", "Ant Design", "Email Newsletter Design", "User Experience Design (UED)", "User Interface Design", "Linux Server", "Networking"],
 		desc: [
@@ -38,7 +38,7 @@ const experienceItems: Record<string, ExperienceItem> = {
 		]
 	},
 	Konnect: {
-		jobTitle: "Frontend Engineer ",
+		jobTitle: "Frontend Engineer (Full Time)",
 		duration: "JAN 2023 - NOV 2024",
 		languages: ["React.js", "Vite", "Tailwind CSS", "Ant Design", "Axios", "Redux"],
 		desc: [
@@ -49,7 +49,7 @@ const experienceItems: Record<string, ExperienceItem> = {
 		]
 	},
 	Ecla: {
-		jobTitle: "Frontend Developer ",
+		jobTitle: "Frontend Developer (Contract)",
 		duration: "JUN 2022 - DEC 2022",
 		languages: ["React.js", "Tailwind CSS"],
 		desc: [
