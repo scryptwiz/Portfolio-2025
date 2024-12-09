@@ -24,14 +24,17 @@ const experienceItems: Record<string, ExperienceItem> = {
 		]
 	},
 	Bellfast: {
-		jobTitle: "Backend Engineer ",
+		jobTitle: "Backend Engineer & Mobile App Developer (Contract)",
 		duration: "JUL 2024 - NOV 2024",
-		languages: ["Node.js", "Nest.js", "SQL", "TypeScript"],
+		languages: ["Node.js", "Nest.js", "SQL", "TypeScript", "React Native", "Zustand", "Paystack", "Google Map"],
 		desc: [
 			"Designed and implemented a backend system from scratch, delivering a robust and efficient solution that significantly improved operational performance.",
 			"Developed a 70% lighter version of the previous backend structure, reducing system resource usage and improving processing efficiency.",
 			"Achieved a 90% reduction in operational costs through optimized architecture and resource-efficient design.",
-			"Delivered a fully functional backend to production within 4 months, streamlining the company's deployment timeline and supporting live operations."
+			"Delivered a fully functional backend to production within 4 months, streamlining the company's deployment timeline and supporting live operations.",
+			"Integrated the APIs I created into a mobile app using React Native.",
+			"Developed mobile app features utilizing React Native and Zustand for seamless state management.",
+			"Integrated Paystack for secure payment processing within the app and Google Map for location-based services.",
 		]
 	},
 	Konnect: {
