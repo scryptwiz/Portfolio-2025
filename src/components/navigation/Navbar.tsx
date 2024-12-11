@@ -19,7 +19,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<nav className='w-full flex justify-between items-center lg:py-10 py-7 px-5 sticky top-0 bg-primary z-50'>
+			<nav className='w-full flex justify-between items-center lg:py-7 py-7 px-5 sticky top-0 bg-primary z-50'>
 				<div className='flex justify-between items-center gap-16'>
 					<h1 className='text-white text-2xl'><span className='font-bold'>Kelvin</span> Ajayi</h1>
 					<div className='lg:flex hidden gap-6 tracking-widest items-center'>
@@ -31,6 +31,9 @@ const Navbar = () => {
 				</div>
 				<div className='lg:flex hidden items-center gap-5'>
 					<div className='flex gap-2 items-center tracking-widest text-lg'>
+						<a href="https://www.upwork.com/freelancers/~01d05a66a25f2a0d39?viewMode=1" target="_blank" rel="noopener noreferrer" className="no-underline" >
+							<Button variant="ghost">Upwork</Button>
+						</a>
 						<a href="https://x.com/KelvinAjayi8" target="_blank" rel="noopener noreferrer" className="no-underline" >
 							<Button variant="ghost"><Twitter color='white' /> Twitter</Button>
 						</a>
@@ -64,6 +67,9 @@ const Navbar = () => {
 							<CustomNavlink onClick={handleClose} customClass='text-xl' to="testimonies">Testimonies</CustomNavlink>
 						</div>
 						<div className='flex justify-between items-center'>
+							<a href="https://www.upwork.com/freelancers/~01d05a66a25f2a0d39?viewMode=1" target="_blank" rel="noopener noreferrer" className="no-underline" >
+								<Button variant="ghost">Upwork</Button>
+							</a>
 							<a href="https://github.com/scryptwiz" target="_blank" rel="noopener noreferrer" className="no-underline" >
 								<Button variant="ghost">Github</Button>
 							</a>
