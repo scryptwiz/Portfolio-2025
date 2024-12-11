@@ -8,6 +8,8 @@ const Introduction = () => {
 		"React.js",
 		"GSAP",
 		"Three Js",
+		"React Native",
+		"Expo",
 		"Node.js",
 		"Python",
 	];
