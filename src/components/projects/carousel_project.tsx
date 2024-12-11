@@ -1,7 +1,7 @@
 import React from "react";
 import FadeInAnimation from "../common/FadeInAnimation";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Carousel, CarouselApi, CarouselContent, CarouselItem } from "../ui/carousel";
+import {Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "../ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { Button } from "../ui/button";
 import { Link } from "lucide-react";
@@ -23,10 +23,12 @@ const Carousel_Project: React.FC = () => {
 			title: "ECLA",
 			description: "ECLA Website",
 			techStack: "React.Js | TailwindCSS",
-			image: "https://via.placeholder.com/400x200?text=ECLA+Project",
+			image: "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/ecla_1.png",
 			images: [
-				"https://via.placeholder.com/800x400?text=ECLA+Image1",
-				"https://via.placeholder.com/800x400?text=ECLA+Image2",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/ecla_4.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/ecla_2.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/ecla_7.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/ecla_9.png",
 			],
 			altText: "ECLA Project",
 			redirectUrl: "https://eclanft.netlify.app/",
@@ -35,10 +37,11 @@ const Carousel_Project: React.FC = () => {
 			title: "CyberQueens",
 			description: "CyberQueens Website",
 			techStack: "React | TailwindCSS | Contentful",
-			image: "https://via.placeholder.com/400x200?text=CyberQueens+Project",
+			image: "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/queens_1.png",
 			images: [
-				"https://via.placeholder.com/800x400?text=CyberQueens+Image1",
-				"https://via.placeholder.com/800x400?text=CyberQueens+Image2",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/queens_1.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/queens_2.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/queens_3.png",
 			],
 			altText: "CyberQueens Project",
 			redirectUrl: "https://cyberqueennft.netlify.app/",
@@ -47,10 +50,11 @@ const Carousel_Project: React.FC = () => {
 			title: "Pubbles",
 			description: "Pubbles Website",
 			techStack: "React | TailwindCSS | Contentful",
-			image: "https://via.placeholder.com/400x200?text=Pubbles+Project",
+			image: "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/pubbles_1.png",
 			images: [
-				"https://via.placeholder.com/800x400?text=Pubbles+Image1",
-				"https://via.placeholder.com/800x400?text=Pubbles+Image2",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/pubbles_1.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/pubbles_2.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/pubbles_4.png",
 			],
 			altText: "Pubbles Project",
 			redirectUrl: "https://pubblesnft.netlify.app/",
@@ -59,10 +63,11 @@ const Carousel_Project: React.FC = () => {
 			title: "Apein",
 			description: "Apein Website",
 			techStack: "React | TailwindCSS",
-			image: "https://via.placeholder.com/400x200?text=Apein+Project",
+			image: "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/ape_1.png",
 			images: [
-				"https://via.placeholder.com/800x400?text=Apein+Image1",
-				"https://via.placeholder.com/800x400?text=Apein+Image2",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/ape_1.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/ape_3.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/ape_4.png",
 			],
 			altText: "Apein Project",
 			redirectUrl: "https://apein.netlify.app/",
@@ -71,10 +76,10 @@ const Carousel_Project: React.FC = () => {
 			title: "Twitter",
 			description: "Twitter Clone",
 			techStack: "React | TailwindCSS | Sanity.io",
-			image: "https://via.placeholder.com/400x200?text=Twitter+Clone",
+			image: "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/twitter_2.png",
 			images: [
-				"https://via.placeholder.com/800x400?text=TwitterClone+Image1",
-				"https://via.placeholder.com/800x400?text=TwitterClone+Image2",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/twitter_1.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/twitter_2.png",
 			],
 			altText: "Twitter Clone",
 			redirectUrl: "https://kelvtwitter.netlify.app",
@@ -83,10 +88,11 @@ const Carousel_Project: React.FC = () => {
 			title: "Medium Clone",
 			description: "Medium Clone",
 			techStack: "Next.Js | TailwindCSS | Sanity.io",
-			image: "https://via.placeholder.com/400x200?text=Medium+Clone",
+			image: "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/medium_1.png",
 			images: [
-				"https://via.placeholder.com/800x400?text=MediumClone+Image1",
-				"https://via.placeholder.com/800x400?text=MediumClone+Image2",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/medium_1.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/medium_2.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/medium_3.png",
 			],
 			altText: "Medium Clone",
 			redirectUrl: "https://kelvin-medium-blog.vercel.app/",
@@ -95,10 +101,10 @@ const Carousel_Project: React.FC = () => {
 			title: "Scientific Calculator",
 			description: "Scientific Calculator",
 			techStack: "Javascript | CSS | HTML",
-			image: "https://via.placeholder.com/400x200?text=Calculator+Project",
+			image: "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/calc_1.png",
 			images: [
-				"https://via.placeholder.com/800x400?text=CalculatorImage1",
-				"https://via.placeholder.com/800x400?text=CalculatorImage2",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/calc_3.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/calc_4.png",
 			],
 			altText: "Scientific Calculator",
 			redirectUrl: "https://kelv-calculator-scientific-version.vercel.app/",
@@ -107,10 +113,11 @@ const Carousel_Project: React.FC = () => {
 			title: "Task Tracker",
 			description: "Task Tracker",
 			techStack: "React.Js | TailwindCSS",
-			image: "https://via.placeholder.com/400x200?text=Task+Tracker",
+			image: "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_1.png",
 			images: [
-				"https://via.placeholder.com/800x400?text=TaskTrackerImage1",
-				"https://via.placeholder.com/800x400?text=TaskTrackerImage2",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_1.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_3.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_2.png",
 			],
 			altText: "Task Tracker",
 			redirectUrl: "https://to-do-tasktracker.netlify.app/",
@@ -119,10 +126,10 @@ const Carousel_Project: React.FC = () => {
 			title: "Tic Tac Toe",
 			description: "Tic Tac Toe",
 			techStack: "JavaScript | CSS | HTML",
-			image: "https://via.placeholder.com/400x200?text=Tic+Tac+Toe",
+			image: "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/tic_tac_1.png",
 			images: [
-				"https://via.placeholder.com/800x400?text=TicTacToeImage1",
-				"https://via.placeholder.com/800x400?text=TicTacToeImage2",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/tic_tac_1.png",
+				"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/tic_tac_4.png",
 			],
 			altText: "Tic Tac Toe",
 			redirectUrl: "https://tic-tac-toe-game-js-rust.vercel.app/",
@@ -189,7 +196,7 @@ const Carousel_Project: React.FC = () => {
 								</DialogTrigger>
 
 								{/* Dialog Content */}
-								<DialogContent className="bg-black rounded-xl border-primary border-2 p-7">
+								<DialogContent className="bg-black rounded-xl border-primary border-2 p-7 lg:w-[90vw] lg:h-[80vh] lg:max-w-none lg:max-h-none">
 									<DialogHeader>
 										<DialogTitle>{project.title}</DialogTitle>
 										<DialogDescription className="text-gray-400 font-semibold">{project.description}</DialogDescription>
@@ -198,20 +205,19 @@ const Carousel_Project: React.FC = () => {
 									<Carousel
 										setApi={setApi}
 										plugins={[plugin.current]}
-										className="max-w-4xl mx-auto mt-4"
+										className="max-w-[80%] mx-auto mt-4 lg:max-h-[70vh]"
 										onMouseLeave={plugin.current.reset}
 									>
 										<CarouselContent>
 											{project.images.map((image, i) => (
 												<CarouselItem key={i}>
-													<img src={image} alt={`${project.title} Image ${i + 1}`} className="w-full rounded-[7px]" />
+													<img src={image} alt={`${project.title} Image ${i + 1}`} className="w-full h-fit lg:fit object-cover rounded-[7px]" />
 												</CarouselItem>
 											))}
 										</CarouselContent>
-
 										{/* Carousel Controls */}
-										{/* <CarouselPrevious /> */}
-										{/* <CarouselNext /> */}
+										<CarouselPrevious />
+										<CarouselNext />
 									</Carousel>
 									<div className="py-2 text-center text-sm text-muted-foreground">
 										Slide {current} of {count}

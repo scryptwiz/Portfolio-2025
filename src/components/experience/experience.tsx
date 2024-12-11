@@ -1,5 +1,6 @@
 import FadeInAnimation from "../common/FadeInAnimation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
+import React from "react";
 
 type ExperienceItem = {
 	jobTitle: string;
@@ -12,10 +13,11 @@ const experienceItems: Record<string, ExperienceItem> = {
 	Digit: {
 		jobTitle: "Fullstack Engineer (Part-time)",
 		duration: "JAN 2023 - PRESENT",
-		languages: ["React.js", "Remix", "Angular", "Tailwind CSS", "TypeScript", "Docker", "CentOS", "SQL", "Nest.js", "JIRA (Agile Workflow)", "AnyDesk", "API Development", "API Documentation", "Ant Design", "Email Newsletter Design", "User Experience Design (UED)", "User Interface Design", "Linux Server", "Networking"],
+		languages: ["React.js", "Remix", "Angular", "Tailwind CSS", "TypeScript", "Docker", "CentOS", "SQL", "Nest.js", "JIRA (Agile Workflow)", "React Native", "AnyDesk", "API Development", "API Documentation", "Ant Design", "Email Newsletter Design", "User Experience Design (UED)", "User Interface Design", "Linux Server", "Networking"],
 		desc: [
 			"Collaborated within a cross-functional team of 3 backend developers, 3 frontend developers, and a project manager to deliver customized software solutions for diverse clients.",
 			"Managed and mentored an intern, ensuring successful integration and productivity within the team.",
+			"Developed mobile applications for an e-commerce platform using React Native, delivering a responsive design and seamless functionality across devices.",
 			"Developed and maintained a robust Hospital Management System (HMS) with a local server setup, server monitoring, and efficient operation using CentOS, Docker, SQL, NestJS, and Angular.",
 			"Implemented DevOps practices by setting up and monitoring servers using AnyDesk, optimizing infrastructure with Docker containers, and managing deployments for seamless client operations.",
 			"Built and deployed frontend interfaces for a ticket management system and driver license management system using Angular, and an e-commerce system using React.",
@@ -24,17 +26,14 @@ const experienceItems: Record<string, ExperienceItem> = {
 		]
 	},
 	Bellfast: {
-		jobTitle: "Backend Engineer & Mobile App Developer (Contract)",
+		jobTitle: "Backend Engineer",
 		duration: "JUL 2024 - NOV 2024",
-		languages: ["Node.js", "Nest.js", "SQL", "TypeScript", "React Native", "Zustand", "Paystack", "Google Map"],
+		languages: ["Node.js", "Nest.js", "SQL", "TypeScript", "Paystack"],
 		desc: [
 			"Designed and implemented a backend system from scratch, delivering a robust and efficient solution that significantly improved operational performance.",
 			"Developed a 70% lighter version of the previous backend structure, reducing system resource usage and improving processing efficiency.",
 			"Achieved a 90% reduction in operational costs through optimized architecture and resource-efficient design.",
 			"Delivered a fully functional backend to production within 4 months, streamlining the company's deployment timeline and supporting live operations.",
-			"Integrated the APIs I created into a mobile app using React Native.",
-			"Developed mobile app features utilizing React Native and Zustand for seamless state management.",
-			"Integrated Paystack for secure payment processing within the app and Google Map for location-based services.",
 		]
 	},
 	Konnect: {
