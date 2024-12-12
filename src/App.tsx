@@ -1,10 +1,24 @@
 import { Carousel_Project, Experience, Footer, Hero, Introduction, MaxWidth, Navbar, Testimonials } from './components'
+import {useEffect, useState} from "react";
+import {clsx} from "clsx";
 
 export const App = () => {
+    const [hasScroll, setHasScroll] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            setHasScroll(window.scrollY>32)
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, []);
   return (
     <>
       {/* Navbar Section */}
-      <MaxWidth className='fixed top-0 left-0 w-full bg-primary z-50'><Navbar /></MaxWidth>
+      <MaxWidth className={clsx('fixed top-0 left-0 w-full bg-primary z-50', hasScroll && 'shadow transition-all duration-500')}><Navbar /></MaxWidth>
       {/* Hero Section */}
       <MaxWidth><Hero /></MaxWidth>
       {/* Service Section */}

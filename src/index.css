@@ -76,3 +76,17 @@ body {
 .job-description li {
   @apply relative pl-7 pb-4 tracking-wider;
 }
+
+.active-nav {
+    @apply text-active scale-110 font-bold transition-all duration-500;
+}
+
+.active-nav::before {
+  @apply inline mr-2 text-active;
+  content: "<<";
+}
+
+.active-nav::after {
+    @apply inline ml-2 text-active;
+    content: ">>";
+}

@@ -19,9 +19,9 @@ const Navbar = () => {
 
 	return (
 		<>
-			<nav className='w-full flex justify-between items-center lg:py-7 py-7 px-5 sticky top-0 bg-primary z-50'>
-				<div className='flex justify-between items-center gap-16'>
-					<h1 className='text-white text-2xl'><span className='font-bold'>Kelvin</span> Ajayi</h1>
+			<nav className='w-full flex justify-between items-center lg:py-7 py-7 md:px-0 px-5 sticky top-0 bg-primary z-50'>
+				<div className='flex justify-between items-center lg:gap-14 gap-12'>
+					<h1 className='text-white md:text-lg text-2xl'><span className='font-bold'>Kelvin</span> Ajayi</h1>
 					<div className='lg:flex hidden gap-6 tracking-widest items-center'>
 						<CustomNavlink customClass='text-base' to="hero">Home</CustomNavlink>
 						<CustomNavlink customClass='text-base' to="services">Service</CustomNavlink>
@@ -29,7 +29,7 @@ const Navbar = () => {
 						<CustomNavlink customClass='text-base' to="testimonies">Testimonies</CustomNavlink>
 					</div>
 				</div>
-				<div className='lg:flex hidden items-center gap-5'>
+				<div className='lg:flex hidden items-center gap-3'>
 					<div className='flex gap-2 items-center tracking-widest text-lg'>
 						<a href="https://www.upwork.com/freelancers/~01d05a66a25f2a0d39?viewMode=1" target="_blank" rel="noopener noreferrer" className="no-underline" >
 							<Button variant="ghost">Upwork</Button>
