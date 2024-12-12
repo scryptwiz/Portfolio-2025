@@ -14,12 +14,12 @@ const Navbar = () => {
 
 	const handleClose = () => {
 		setIsOpen(false);
-		setTimeout(() => setShouldRender(false), 700);
+		setTimeout(() => setShouldRender(false), 500);
 	};
 
 	return (
 		<>
-			<nav className='w-full flex justify-between items-center lg:py-7 py-7 md:px-0 px-5 sticky top-0 bg-primary z-50'>
+			<nav className='w-full flex justify-between items-center lg:py-7 py-7 lg:px-0 px-5 sticky top-0 bg-primary z-50'>
 				<div className='flex justify-between items-center lg:gap-14 gap-12'>
 					<h1 className='text-white md:text-lg text-2xl'><span className='font-bold'>Kelvin</span> Ajayi</h1>
 					<div className='lg:flex hidden gap-6 tracking-widest items-center'>
