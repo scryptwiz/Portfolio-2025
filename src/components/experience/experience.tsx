@@ -67,6 +67,17 @@ const experienceItems: Record<string, ExperienceItem> = {
 			"Organized and led weekly coding workshops, where students could collaborate, share insights, and develop their projects, encouraging peer-to-peer learning and community-building.",
 			"Received positive feedback from students for creating an encouraging atmosphere that helped them build confidence in their technical abilities and inspired them to pursue further learning in web development."
 		]
+	},
+	Freelancer: {
+		jobTitle: "UI/UX and Graphics Designer",
+		duration: "2019 - 2021",
+		desc: [
+			"Provided UI/UX and graphics design services to a diverse range of clients, delivering intuitive and visually appealing designs tailored to client requirements.",
+			"Designed and prototyped user-friendly interfaces using tools like Figma and Adobe XD, ensuring seamless user experiences.",
+			"Collaborated with developers to refine designs and implement feedback, resulting in high-quality deliverables.",
+			"Created wireframes, user flows, and interactive prototypes, effectively communicating design concepts and user journeys.",
+			"Produced high-quality graphics for marketing, branding, and digital campaigns, aligning with client goals and project objectives."
+		]
 	}
 };
 
