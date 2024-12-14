@@ -20,13 +20,12 @@ export const App = () => {
       {/* Navbar Section */}
       <MaxWidth className={clsx('fixed top-0 left-0 w-full bg-primary z-50', hasScroll && 'shadow transition-all duration-500')}><Navbar /></MaxWidth>
       {/* Hero Section */}
-      <MaxWidth><Hero /></MaxWidth>
+      <MaxWidth id="hero"><Hero /></MaxWidth>
       {/* Service Section */}
       <MaxWidth id="services" className='bg-secondary px-5'><Introduction /></MaxWidth>
       {/* Experience Section */}
-      <MaxWidth id="services" className='px-5 py-20'><Experience /></MaxWidth>
+      <MaxWidth id="experience" className='px-5 py-20'><Experience /></MaxWidth>
       {/* Projects section */}
-      {/* <MaxWidth id="works" className='bg-secondary px-5'><Projects /></MaxWidth> */}
       <MaxWidth id="works" className='bg-secondary px-5'><Carousel_Project /></MaxWidth>
       {/* Testimonials section */}
       <MaxWidth id="testimonies" className='bg-primary px-5'><Testimonials /></MaxWidth>

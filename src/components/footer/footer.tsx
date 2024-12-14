@@ -15,6 +15,18 @@ const Footer = () => {
 
 				{/* Right Section: Social Icons */}
 				<div className="flex space-x-6">
+					{/* Upwork */}
+					<a
+						href="https://www.upwork.com/freelancers/~01d05a66a25f2a0d39?viewMode=1"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="no-underline"
+					>
+						<Button variant="ghost">
+							Upwork
+						</Button>
+					</a>
+
 					{/* Twitter Button */}
 					<a
 						href="https://x.com/KelvinAjayi8"
@@ -23,7 +35,7 @@ const Footer = () => {
 						className="no-underline"
 					>
 						<Button variant="ghost">
-							<Twitter className="mr-2" color="white" />
+							<Twitter className="mr-2" color="white"/>
 							Twitter
 						</Button>
 					</a>
@@ -36,7 +48,7 @@ const Footer = () => {
 						className="no-underline"
 					>
 						<Button variant="ghost">
-							<Github className="mr-2" color="white" />
+							<Github className="mr-2" color="white"/>
 							Github
 						</Button>
 					</a>
@@ -47,7 +59,7 @@ const Footer = () => {
 						className="no-underline"
 					>
 						<Button variant="ghost" size="icon">
-							<Mail color="#64f4ac" />
+							<Mail color="#64f4ac"/>
 						</Button>
 					</a>
 				</div>
