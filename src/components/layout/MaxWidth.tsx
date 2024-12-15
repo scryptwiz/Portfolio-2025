@@ -3,7 +3,7 @@ import {Element} from "react-scroll";
 
 interface MaxWidthProps {
     className?: string;
-    id?: string;
+    id: string;
     children: ReactNode;
 }
 
