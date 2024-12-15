@@ -28,6 +28,20 @@ interface Project {
 const Carousel_Project: React.FC = () => {
     const projectsData: Project[] = [
         {
+            title: "XORA",
+            description: "XORA Website Clone",
+            techStack: "React.Js | TailwindCSS | SASS",
+            image: "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/xora_1.png",
+            images: [
+                "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/xora_1.png",
+                "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/xora_2.png",
+                "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/xora_3.png",
+                "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/xora_4.png",
+            ],
+            altText: "XORA Project",
+            redirectUrl: "https://xora-clone-123.netlify.app/",
+        },
+        {
             title: "Konnect Web App",
             description: "Fintech and an E-commerce web application. In addition to the platform I worked on the admin platform for tracking all transactions.",
             techStack: "React.Js | TailwindCSS | Redux | Material-UI | Ant Design",
@@ -129,19 +143,6 @@ const Carousel_Project: React.FC = () => {
             altText: "Scientific Calculator",
             redirectUrl: "https://kelv-calculator-scientific-version.vercel.app/",
         },
-        // {
-        // 	title: "Task Tracker",
-        // 	description: "Task Tracker",
-        // 	techStack: "React.Js | TailwindCSS",
-        // 	image: "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_1.png",
-        // 	images: [
-        // 		"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_1.png",
-        // 		"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_3.png",
-        // 		"https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_2.png",
-        // 	],
-        // 	altText: "Task Tracker",
-        // 	redirectUrl: "https://to-do-tasktracker.netlify.app/",
-        // },
         {
             title: "Tic Tac Toe",
             description: "Tic Tac Toe",
@@ -153,6 +154,19 @@ const Carousel_Project: React.FC = () => {
             ],
             altText: "Tic Tac Toe",
             redirectUrl: "https://tic-tac-toe-game-js-rust.vercel.app/",
+        },
+        {
+            title: "Task Tracker",
+            description: "Task Tracker",
+            techStack: "React.Js | TailwindCSS",
+            image: "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_1.png",
+            images: [
+                "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_1.png",
+                "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_3.png",
+                "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_2.png",
+            ],
+            altText: "Task Tracker",
+            redirectUrl: "https://to-do-tasktracker.netlify.app/",
         },
     ];
 
