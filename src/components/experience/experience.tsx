@@ -70,7 +70,7 @@ const experienceItems: Record<string, ExperienceItem> = {
 	},
 	Freelancer: {
 		jobTitle: "UI/UX and Graphics Designer",
-		duration: "SEPT 2019 - FEB 2021",
+		duration: "FEB 2019 - FEB 2021",
 		desc: [
 			"Provided UI/UX and graphics design services to a diverse range of clients, delivering intuitive and visually appealing designs tailored to client requirements.",
 			"Designed and prototyped user-friendly interfaces using tools like Figma and Adobe XD, ensuring seamless user experiences.",
