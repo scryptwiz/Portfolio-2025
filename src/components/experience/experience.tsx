@@ -13,7 +13,7 @@ const experienceItems: Record<string, ExperienceItem> = {
 	Digit: {
 		jobTitle: "Fullstack Engineer (Part-time)",
 		duration: "JAN 2023 - PRESENT",
-		languages: ["React.js", "Remix", "Angular", "Tailwind CSS", "TypeScript", "Docker", "CentOS", "SQL", "Nest.js", "JIRA (Agile Workflow)", "React Native", "AnyDesk", "API Development", "API Documentation", "Ant Design", "Email Newsletter Design", "User Experience Design (UED)", "User Interface Design", "Linux Server", "Networking"],
+		languages: ["React.js", "Next.js", "React Native", "Tailwind CSS", "TypeScript", "Docker", "CentOS", "SQL", "Nest.js", "JIRA (Agile Workflow)", "React Native", "AnyDesk", "API Development", "API Documentation", "Ant Design", "Email Newsletter Design", "User Experience Design (UED)", "User Interface Design", "Linux Server", "Networking"],
 		desc: [
 			"Collaborated within a cross-functional team of 3 backend developers, 3 frontend developers, and a project manager to deliver customized software solutions for diverse clients.",
 			"Managed and mentored an intern, ensuring successful integration and productivity within the team.",
