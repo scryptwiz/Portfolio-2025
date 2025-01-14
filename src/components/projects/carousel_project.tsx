@@ -28,6 +28,21 @@ interface Project {
 const Carousel_Project: React.FC = () => {
     const projectsData: Project[] = [
         {
+            title: "Skateboard",
+            description: "Skateboard Website Design",
+            techStack: "Next.Js | TailwindCSS | Matter-js | SVG animation | SASS",
+            image: "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/skateboard-1.png",
+            images: [
+                "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/skateboard-1.png",
+                "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/skateboard-2.png",
+                "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/skateboard-3.png",
+                "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/skateboard-4.png",
+                "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/skateboard-7.png",
+            ],
+            altText: "Skateboard Website Design",
+            redirectUrl: "https://3d-skateboard-ecom.vercel.app/",
+        },
+        {
             title: "XORA",
             description: "XORA Website Clone",
             techStack: "React.Js | TailwindCSS | SASS",
