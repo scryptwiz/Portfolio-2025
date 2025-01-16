@@ -36,7 +36,7 @@ const Navbar = () => {
                 </div>
                 <div className='lg:flex hidden items-center gap-3'>
                     <div className='flex gap-2 items-center tracking-widest text-lg'>
-                        <a href="https://www.upwork.com/freelancers/~01d05a66a25f2a0d39?viewMode=1" target="_blank"
+                        <a href="https://www.upwork.com/freelancers/~01d05a66a25f2a0d39?mp_source=share" target="_blank"
                            rel="noopener noreferrer" className="no-underline">
                             <Button variant="ghost">Upwork</Button>
                         </a>
@@ -77,7 +77,7 @@ const Navbar = () => {
                             <CustomNavlink onClick={handleClose} customClass='text-xl' to="testimonies">Testimonies</CustomNavlink>
                         </div>
                         <div className='flex justify-between items-center'>
-                            <a href="https://www.upwork.com/freelancers/~013db0a7cb12e1882d?mp_source=share" target="_blank"
+                            <a href="https://www.upwork.com/freelancers/~01d05a66a25f2a0d39?mp_source=share" target="_blank"
                                rel="noopener noreferrer" className="no-underline">
                                 <Button variant="ghost">Upwork</Button>
                             </a>
