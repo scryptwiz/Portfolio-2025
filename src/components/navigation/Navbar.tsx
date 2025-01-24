@@ -31,7 +31,7 @@ const Navbar = () => {
                         <CustomNavlink customClass='text-sm' to="services">Services</CustomNavlink>
                         <CustomNavlink customClass='text-sm' to="experience">Experience</CustomNavlink>
                         <CustomNavlink customClass='text-sm' to="works">Works</CustomNavlink>
-                        <CustomNavlink customClass='text-sm' to="testimonies">Testimonies</CustomNavlink>
+{/*                         <CustomNavlink customClass='text-sm' to="testimonies">Testimonies</CustomNavlink> */}
                     </div>
                 </div>
                 <div className='lg:flex hidden items-center gap-3'>
@@ -74,7 +74,7 @@ const Navbar = () => {
                             <CustomNavlink onClick={handleClose} customClass='text-xl' to="services">Services</CustomNavlink>
                             <CustomNavlink onClick={handleClose} customClass='text-xl' to="experience">Experience</CustomNavlink>
                             <CustomNavlink onClick={handleClose} customClass='text-xl' to="works">Works</CustomNavlink>
-                            <CustomNavlink onClick={handleClose} customClass='text-xl' to="testimonies">Testimonies</CustomNavlink>
+{/*                             <CustomNavlink onClick={handleClose} customClass='text-xl' to="testimonies">Testimonies</CustomNavlink> */}
                         </div>
                         <div className='flex justify-between items-center'>
                             <a href="https://www.upwork.com/freelancers/~01d05a66a25f2a0d39?mp_source=share" target="_blank"
