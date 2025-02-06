@@ -183,19 +183,6 @@ const Carousel_Project: React.FC = () => {
             altText: "Tic Tac Toe",
             redirectUrl: "https://tic-tac-toe-game-js-rust.vercel.app/",
         },
-        {
-            title: "Task Tracker",
-            description: "Task Tracker",
-            techStack: "React.Js | TailwindCSS",
-            image: "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_1.png",
-            images: [
-                "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_1.png",
-                "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_3.png",
-                "https://jykkpkzafkialtkalzxs.supabase.co/storage/v1/object/public/images/todo_2.png",
-            ],
-            altText: "Task Tracker",
-            redirectUrl: "https://to-do-tasktracker.netlify.app/",
-        },
     ];
 
 
