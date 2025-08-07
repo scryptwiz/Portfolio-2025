@@ -105,7 +105,7 @@ const Experience: React.FC = () => {
 			<p className='tracking-wider text-sm mb-7 font-semibold'>/ Experience</p>
 			<div className="flex gap-6">
 				{/* ShadCN Tabs (Vertical) */}
-				<Tabs defaultValue="Digit" orientation="vertical" className="flex flex-col md:flex-row">
+				<Tabs defaultValue="Convose LTD" orientation="vertical" className="flex flex-col md:flex-row">
 					{/* Tabs List */}
 					<TabsList className="flex flex-wrap md:gap-4 md:border-r-2 border-gray-200 pr-4 text-left w-full md:w-auto md:flex-col h-full mb-5 md:mb-0">
 						{Object.keys(experienceItems).map((key) => (
