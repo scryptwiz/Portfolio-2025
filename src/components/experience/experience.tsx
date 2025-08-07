@@ -10,9 +10,27 @@ type ExperienceItem = {
 };
 
 const experienceItems: Record<string, ExperienceItem> = {
+	"Convose LTD": {
+		jobTitle: "Co-Founder & Senior Mobile App Engineer",
+		duration: "MAR 2025 - PRESENT",
+		languages: ["React Native", "Expo", "Redux", "RxJs", "React Native CLI", "AWS", "CodePush", "iOS", "Android"],
+		desc: [
+			"Leading the mobile development team in building a realtime conversation app using React Native.",
+			"Contributing to deployment processes and ensuring smooth updates via AWS and CodePush to enhance user experience.",
+		]
+	},
+	Webbywolf: {
+		jobTitle: "Software Engineer",
+		duration: "FEB 2025 - JUN 2025",
+		languages: ["Next.js", "OpenAI", "Framer Motion", "Tailwind CSS", "TypeScript", "Supabase", "Dodo Payment Gtaeway", "API Development", "API Documentation"],
+		desc: [
+			"Independently developed 95% of thelexicon.ai, an AI article generator platform, using Next.js, Supabase, OpenAi and Tailwind CSS.",
+			"Led both frontend and backend development, including subscription access via Dodo Payments and animated UI with Framer Motion.",
+		]
+	},
 	Digit: {
 		jobTitle: "Fullstack Engineer (Part-time)",
-		duration: "JAN 2023 - PRESENT",
+		duration: "JAN 2023 - FEB 2025",
 		languages: ["React.js", "Next.js", "React Native", "Tailwind CSS", "TypeScript", "Docker", "CentOS", "SQL", "Nest.js", "JIRA (Agile Workflow)", "React Native", "AnyDesk", "API Development", "API Documentation", "Ant Design", "Email Newsletter Design", "User Experience Design (UED)", "User Interface Design", "Linux Server", "Networking"],
 		desc: [
 			"Collaborated within a cross-functional team of 3 backend developers, 3 frontend developers, and a project manager to deliver customized software solutions for diverse clients.",
